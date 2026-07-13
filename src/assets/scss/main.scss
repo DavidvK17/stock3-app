@@ -1,0 +1,36 @@
+// src/assets/scss/main.scss
+
+// 1. Globale Variablen (stock3 Official Night Theme)
+:root {
+  /* Backgrounds */
+  --c-bg-main: #10141a;       // stock3 Gray 800
+  --c-bg-surface: #181e26;    // stock3 Gray 700
+  --c-bg-elevated: #2b3038;   // stock3 Gray 600
+  
+  /* Text */
+  --c-text-main: #f5f9ff;     // stock3 Night Text
+  --c-text-muted: #757a84;    // stock3 Gray 400
+  
+  /* Brand & Highlights */
+  --c-brand-primary: #1e6ee6; // stock3 Primary Blue
+  --c-up-green: #00e593;      // stock3 Up
+  --c-down-red: #ff525e;      // stock3 Down
+  
+  --spacing-base: 8px;
+}
+
+// 2. Brutaler Reset
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// 3. Globale Basis
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--c-bg-main);
+  color: var(--c-text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}

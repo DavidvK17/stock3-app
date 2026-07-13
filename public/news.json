@@ -1,0 +1,47 @@
+[
+  {
+    "id": "s3-001",
+    "headline": "DAX bricht durch 18.000-Punkte-Marke",
+    "summary": "Starke Vorgaben aus den USA und sinkende Inflationsdaten treiben den Leitindex auf ein neues Allzeithoch.",
+    "content": "Der deutsche Leitindex hat am heutigen Handelstag historische Stärke bewiesen. Angetrieben durch den Tech-Sektor und beruhigende Signale der EZB bezüglich der Zinspolitik, durchbrach der DAX die psychologisch wichtige Marke. Analysten von stock3 erwarten nun eine Konsolidierung auf hohem Niveau, bevor der nächste Widerstand getestet wird.",
+    "timestamp": "2026-07-12T08:30:00Z",
+    "author": "Markus Wehrle",
+    "tags": ["DAX", "Märkte", "EZB"]
+  },
+  {
+    "id": "s3-002",
+    "headline": "Nvidia-Zahlen: Nächster KI-Schub oder Blase?",
+    "summary": "Die Spannung steigt vor den morgigen Quartalszahlen des Chip-Giganten. Optionsmärkte preisen enorme Schwankungen ein.",
+    "content": "Alle Augen richten sich auf das Silicon Valley. Wenn Nvidia morgen nach US-Börsenschluss seine Bücher öffnet, geht es nicht nur um ein Unternehmen, sondern um das Sentiment des gesamten KI-Sektors. stock3-Experten raten Anlegern, sich im Vorfeld mit engen Stop-Loss-Orders abzusichern, da die implizite Volatilität extrem hoch ist.",
+    "timestamp": "2026-07-12T10:15:00Z",
+    "author": "Tech-Desk",
+    "tags": ["Nvidia", "Tech", "KI", "Quartalszahlen"]
+  },
+  {
+    "id": "s3-003",
+    "headline": "Goldpreis verliert an Glanz",
+    "summary": "Nach der jüngsten Rallye setzen Gewinnmitnahmen ein. Fällt die wichtige Unterstützung bei 2.300 USD?",
+    "content": "Das Edelmetall muss heute deutliche Federn lassen. Ein wiedererstarkter US-Dollar und steigende Anleiherenditen machen Gold als Anlageklasse aktuell weniger attraktiv. Charttechnisch nähert sich der Preis einer massiven Unterstützungszone. Ein Bruch könnte weitere Verkaufswellen auslösen.",
+    "timestamp": "2026-07-12T11:45:00Z",
+    "author": "Rohstoff-Redaktion",
+    "tags": ["Gold", "Rohstoffe", "Charttechnik"]
+  },
+  {
+    "id": "s3-004",
+    "headline": "Bitcoin: Seitwärtsphase zermürbt Trader",
+    "summary": "Seit drei Wochen pendelt die Kryptowährung in einer engen Range. Wann kommt der Ausbruch?",
+    "content": "Weder Bullen noch Bären scheinen aktuell die Oberhand gewinnen zu können. Das Handelsvolumen bei Bitcoin ist auf ein Mehrmonatstief gesunken. Historisch gesehen folgen auf solche extremen Phasen der Kompression oft explosive Ausbrüche. Die Frage ist nur: in welche Richtung?",
+    "timestamp": "2026-07-12T14:20:00Z",
+    "author": "Crypto-Team",
+    "tags": ["Bitcoin", "Krypto", "Trading"]
+  },
+  {
+    "id": "s3-005",
+    "headline": "Dividenden-Aristokraten im Fokus",
+    "summary": "In unsicheren Zeiten suchen Anleger den Hafen der verlässlichen Ausschütter.",
+    "content": "Während Wachstumsaktien schwächeln, verzeichnen ETFs auf Dividenden-Aristokraten starke Zuflüsse. Unternehmen, die ihre Dividenden seit über 25 Jahren kontinuierlich steigern, bieten einen Puffer gegen Marktschwankungen. Wir analysieren drei Top-Kandidaten für das dritte Quartal.",
+    "timestamp": "2026-07-12T16:00:00Z",
+    "author": "Sabine Meyer",
+    "tags": ["Dividenden", "Value", "Strategie"]
+  }
+]
