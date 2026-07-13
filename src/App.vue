@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// Wir importieren unseren Legostein
 import TheNavigation from './components/TheNavigation.vue'
 </script>
 

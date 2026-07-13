@@ -45,7 +45,7 @@ function toggleSubmenu() {
   background-color: var(--c-bg-surface);
   border-bottom: 1px solid var(--c-bg-elevated);
 
-  &__nav { // SCSS Nesting für BEM (.header__nav)
+  &__nav {
     padding: calc(var(--spacing-base) * 2) calc(var(--spacing-base) * 3);
   }
 
@@ -62,7 +62,7 @@ function toggleSubmenu() {
   list-style: none;
   gap: calc(var(--spacing-base) * 3);
 
-  &--secondary { // BEM Modifier für das Untermenü (.nav-list--secondary)
+  &--secondary {
     gap: calc(var(--spacing-base) * 2);
     
     .nav-list__link {
@@ -92,7 +92,6 @@ function toggleSubmenu() {
     gap: calc(var(--spacing-base) * 0.5);
     font-family: inherit;
 
-    /* HIER GEÄNDERT: stock3 Primary Blue beim Hover & Active */
     &:hover, &--active {
       color: var(--c-brand-primary);
     }
