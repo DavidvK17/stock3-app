@@ -7,6 +7,7 @@ import NewsModal from './components/NewsModal.vue'
 
 const newsList = ref<Stock3News[]>([])
 const selectedNews = ref<Stock3News | null>(null)
+const searchQuery = ref('')
 
 async function fetchNews() {
   try {
@@ -21,8 +22,15 @@ async function fetchNews() {
   }
 }
 
-const sortedNewsList = computed(() => {
-  return [...newsList.value].sort((a, b) => {
+const filteredAndSortedNewsList = computed(() => {
+  const filtered = newsList.value.filter((item) => {
+    const query = searchQuery.value.toLowerCase().trim()
+    if (!query) return true
+    const matchesHeadline = item.headline.toLowerCase().includes(query)
+    const matchesSummary = item.headline.toLowerCase().includes(query)
+    return matchesHeadline || matchesSummary
+  })
+  return filtered.sort((a, b) => {
     return new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
   })
 })
@@ -46,11 +54,19 @@ onMounted(() => {
   <main class="l-container">
     <header>
       <h1 class="page-title">stock3 Live-Ticker</h1>
-      <p>{{ newsList.length }} Meldungen:</p>
+      <div class="search-container">
+        <input 
+        v-model="searchQuery"
+        type="text"
+        placeholder="Nach News suchen (z.B. Dax, Nvidia...)"
+        class="search-input" 
+        />
+      </div>
+      <p class="news-count">{{ filteredAndSortedNewsList.length }} Meldungen:</p>
     </header> 
     <section class="news-grid">
       <NewsCard
-        v-for="item in sortedNewsList"
+        v-for="item in filteredAndSortedNewsList"
         :key="item.id"
         :news="item"
         @select="openNews"
@@ -80,10 +96,28 @@ onMounted(() => {
 
 .news-count {
   font-size: 0.9rem;
-  color: #666;
-  background: #f5f5f5;
-  padding: 4px 12px;
-  border-radius: 20px;
+  margin-bottom: calc(var(--spacing-base) * 3);
+  color: var(--c-brand-secondary);
+}
+
+.search-container {
+  margin: calc(var(--spacing-base) * 3) 0;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:focus {
+    border-color: var(--c-brand-primary); /* Unser stock3-Blau */
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+  }
 }
 
 /* Flexibles CSS Grid für das Layout */
