@@ -53,7 +53,7 @@ onMounted(() => {
   <TheNavigation />
   <main class="l-container">
     <header>
-      <h1 class="page-title">stock3 Live-Ticker</h1>
+      <h1 class="page-title">stock3 News-Feed</h1>
       <div class="search-container">
         <input 
         v-model="searchQuery"
