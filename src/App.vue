@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import TheNavigation from './components/TheNavigation.vue'
 import type { Stock3News } from './types/news'
+import TheNavigation from './components/TheNavigation.vue'
+import NewsCard from './components/NewsCard.vue'
 
 const newsList = ref<Stock3News[]>([])
 
@@ -27,13 +28,21 @@ onMounted(() => {
 <template>
   <TheNavigation />
   <main class="l-container">
-    <h1 class="page-title">stock3 Live-Ticker</h1>
-    <p>Geladene Meldungen: {{ newsList.length }}</p>
+    <header>
+      <h1 class="page-title">stock3 Live-Ticker</h1>
+      <p>{{ newsList.length }} Meldungen:</p>
+    </header> 
+    <section class="news-grid">
+      <NewsCard
+        v-for="item in newsList"
+        :key="item.id"
+        :news="item"
+      />
+    </section>
     </main>
 </template>
 
 <style lang="scss" scoped>
-/* Das "l-" Präfix (Layout) ist eine Standard-BEM-Konvention für strukturelle Container */
 .l-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -44,5 +53,20 @@ onMounted(() => {
   font-size: 2rem;
   margin-bottom: calc(var(--spacing-base) * 3);
   color: var(--c-brand-primary);
+}
+
+.news-count {
+  font-size: 0.9rem;
+  color: #666;
+  background: #f5f5f5;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* Flexibles CSS Grid für das Layout */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: calc(var(--spacing-base) * 3);
 }
 </style>
