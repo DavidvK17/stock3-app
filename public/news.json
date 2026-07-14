@@ -6,7 +6,7 @@
     "content": "Der deutsche Leitindex hat am heutigen Handelstag historische Stärke bewiesen. Angetrieben durch den Tech-Sektor und beruhigende Signale der EZB bezüglich der Zinspolitik, durchbrach der DAX die psychologisch wichtige Marke. Analysten von stock3 erwarten nun eine Konsolidierung auf hohem Niveau, bevor der nächste Widerstand getestet wird.",
     "timestamp": "2026-07-12T08:30:00Z",
     "author": "Markus Wehrle",
-    "tags": ["DAX", "Märkte", "EZB"]
+    "tags": ["DAX", "Märkte", "Trading"]
   },
   {
     "id": "s3-002",
@@ -15,7 +15,7 @@
     "content": "Alle Augen richten sich auf das Silicon Valley. Wenn Nvidia morgen nach US-Börsenschluss seine Bücher öffnet, geht es nicht nur um ein Unternehmen, sondern um das Sentiment des gesamten KI-Sektors. stock3-Experten raten Anlegern, sich im Vorfeld mit engen Stop-Loss-Orders abzusichern, da die implizite Volatilität extrem hoch ist.",
     "timestamp": "2026-07-12T10:15:00Z",
     "author": "Tech-Desk",
-    "tags": ["Nvidia", "Tech", "KI", "Quartalszahlen"]
+    "tags": ["Tech", "Aktien", "Märkte"]
   },
   {
     "id": "s3-003",
@@ -24,7 +24,7 @@
     "content": "Das Edelmetall muss heute deutliche Federn lassen. Ein wiedererstarkter US-Dollar und steigende Anleiherenditen machen Gold als Anlageklasse aktuell weniger attraktiv. Charttechnisch nähert sich der Preis einer massiven Unterstützungszone. Ein Bruch könnte weitere Verkaufswellen auslösen.",
     "timestamp": "2026-07-12T11:45:00Z",
     "author": "Rohstoff-Redaktion",
-    "tags": ["Gold", "Rohstoffe", "Charttechnik"]
+    "tags": ["Rohstoffe", "Trading", "Charttechnik"]
   },
   {
     "id": "s3-004",
@@ -33,15 +33,24 @@
     "content": "Weder Bullen noch Bären scheinen aktuell die Oberhand gewinnen zu können. Das Handelsvolumen bei Bitcoin ist auf ein Mehrmonatstief gesunken. Historisch gesehen folgen auf solche extremen Phasen der Kompression oft explosive Ausbrüche. Die Frage ist nur: in welche Richtung?",
     "timestamp": "2026-07-12T14:20:00Z",
     "author": "Crypto-Team",
-    "tags": ["Bitcoin", "Krypto", "Trading"]
+    "tags": ["Krypto", "Trading", "Tech"]
   },
   {
     "id": "s3-005",
-    "headline": "Dividenden-Aristokraten im Fokus",
-    "summary": "In unsicheren Zeiten suchen Anleger den Hafen der verlässlichen Ausschütter.",
-    "content": "Während Wachstumsaktien schwächeln, verzeichnen ETFs auf Dividenden-Aristokraten starke Zuflüsse. Unternehmen, die ihre Dividenden seit über 25 Jahren kontinuierlich steigern, bieten einen Puffer gegen Marktschwankungen. Wir analysieren drei Top-Kandidaten für das dritte Quartal.",
-    "timestamp": "2026-07-12T16:00:00Z",
+    "headline": "Apple überrascht mit neuen KI-Features",
+    "summary": "Der iPhone-Hersteller meldet sich im Rennen um die Künstliche Intelligenz eindrucksvoll zurück.",
+    "content": "Lange wurde Apple vorgeworfen, den KI-Trend verschlafen zu haben. Auf der heutigen Entwicklerkonferenz präsentierte der Konzern nun eine tiefe Integration von KI-Funktionen in das kommende Betriebssystem. Die Aktie reagierte mit einem deutlichen Kurssprung.",
+    "timestamp": "2026-07-12T15:30:00Z",
+    "author": "Tech-Desk",
+    "tags": ["Tech", "Aktien", "Märkte"]
+  },
+  {
+    "id": "s3-006",
+    "headline": "Rheinmetall: Charttechnischer Ausbruch steht bevor",
+    "summary": "Die Aktie des Rüstungskonzerns formiert ein bullisches Dreieck. Ein Kaufsignal rückt näher.",
+    "content": "Nach einer kurzen Phase der Konsolidierung ziehen die Käufer bei Rheinmetall wieder an. Wenn der Widerstand bei 520 Euro auf Schlusskursbasis überwunden wird, generiert dies ein massives mittelfristiges Kaufsignal.",
+    "timestamp": "2026-07-12T16:45:00Z",
     "author": "Sabine Meyer",
-    "tags": ["Dividenden", "Value", "Strategie"]
+    "tags": ["DAX", "Aktien", "Charttechnik"]
   }
 ]
