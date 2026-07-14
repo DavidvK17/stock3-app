@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import type { Stock3News } from './types/news'
 import TheNavigation from './components/TheNavigation.vue'
 import NewsCard from './components/NewsCard.vue'
@@ -19,6 +19,12 @@ async function fetchNews() {
   }
 }
 
+const sortedNewsList = computed(() => {
+  return [...newsList.value].sort((a, b) => {
+    return new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
+  })
+})
+
 onMounted(() => {
   fetchNews()
 })
@@ -34,7 +40,7 @@ onMounted(() => {
     </header> 
     <section class="news-grid">
       <NewsCard
-        v-for="item in newsList"
+        v-for="item in sortedNewsList"
         :key="item.id"
         :news="item"
       />
