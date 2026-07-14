@@ -3,8 +3,10 @@ import { ref, onMounted, computed } from 'vue'
 import type { Stock3News } from './types/news'
 import TheNavigation from './components/TheNavigation.vue'
 import NewsCard from './components/NewsCard.vue'
+import NewsModal from './components/NewsModal.vue'
 
 const newsList = ref<Stock3News[]>([])
+const selectedNews = ref<Stock3News | null>(null)
 
 async function fetchNews() {
   try {
@@ -25,6 +27,14 @@ const sortedNewsList = computed(() => {
   })
 })
 
+const openNews = (news: Stock3News) => {
+  selectedNews.value = news
+}
+
+const closeNews = () => {
+  selectedNews.value = null
+}
+
 onMounted(() => {
   fetchNews()
 })
@@ -43,8 +53,15 @@ onMounted(() => {
         v-for="item in sortedNewsList"
         :key="item.id"
         :news="item"
+        @select="openNews"
       />
     </section>
+
+    <NewsModal
+      v-if="selectedNews"
+      :news="selectedNews"
+      @close="closeNews"
+    />
     </main>
 </template>
 

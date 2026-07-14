@@ -5,6 +5,10 @@ defineProps<{
     news: Stock3News
 }>()
 
+const emit = defineEmits<{
+  select: [news: Stock3News]
+}>()
+
 const formatTime = (isoString: string) => {
     const date = new Date(isoString)
     return date.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit'})
@@ -12,7 +16,7 @@ const formatTime = (isoString: string) => {
 </script>
 
 <template>
-    <article class="news-card">
+    <article class="news-card" @click="emit('select', news)">
         <div class="news-card__meta">
             <time class="news-card__time" :datetime="news.timestamp">
                 {{ formatTime(news.timestamp) }}
