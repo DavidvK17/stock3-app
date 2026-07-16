@@ -6,7 +6,8 @@ defineProps<{
 }>()
 
 const emit = defineEmits<{
-  select: [news: Stock3News]
+  'select': [news: Stock3News]
+  'tag-click': [tag: string]
 }>()
 
 const formatTime = (isoString: string) => {
@@ -32,6 +33,7 @@ const formatTime = (isoString: string) => {
             v-for="tag in news.tags"
             :key="tag"
             class="news-card__tag"
+            @click.stop="emit('tag-click', tag)"
             >
             {{ tag }}
         </span>
