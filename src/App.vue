@@ -80,14 +80,16 @@ onMounted(() => {
   <main class="l-container">
     <header>
       <h1 class="page-title">stock3 News-Feed</h1>
+
       <div class="search-container">
         <input 
         v-model="searchQuery"
-        type="text"
+        type="search"
         placeholder="Nach News suchen (z.B. Dax, Nvidia...)"
         class="search-input" 
         />
       </div>
+
       <div class="filter-status">
         <p class="news-count">{{ filteredAndSortedNewsList.length }} Meldungen:</p>
         <span v-if="selectedTag" class="active-badge">
